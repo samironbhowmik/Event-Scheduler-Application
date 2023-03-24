@@ -15,32 +15,6 @@ route.post("/v1/events", async (req, res) => {
       endTime: endTime,
     });
 
-    // if (title === "") {
-    //   return res.status(400).json({
-    //     error: "validation error: title is required",
-    //   });
-    // }
-    // if (description === "") {
-    //     return res.status(400).json({
-    //       error: "validation error: description is required",
-    //     });
-    //   }
-    //   if (location === "") {
-    //     return res.status(400).json({
-    //       error: "validation error: location is required",
-    //     });
-    //   }
-    //   if (startTime === "") {
-    //     return res.status(400).json({
-    //       error: "validation error: startTime is required",
-    //     });
-    //   }
-    //   if (endTime === "") {
-    //     return res.status(400).json({
-    //       error: "validation error: endTime is required",
-    //     });
-    //   }
-
     res.status(201).json({
       status: "success",
       event,
